@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>关于 | 小小白的bolg</title>
+<title>python自学（1） | 小小白的bolg</title>
 <meta name="description" content="学习永无止境">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -92,20 +92,57 @@
       <div class="main-container">
         <div class="content-container" data-aos="fade-up">
           <div class="post-detail">
-            <h2 class="post-title">关于</h2>
-            <div class="post-date">2019-01-25</div>
+            <h2 class="post-title">python自学（1）</h2>
+            <div class="post-date">2019-10-09</div>
             
             <div class="post-content">
-              <blockquote>
-<p>欢迎来到我的小站呀，很高兴遇见你！🤝</p>
-</blockquote>
-<h2 id="关于本站">🏠 关于本站</h2>
-<h2 id="博主是谁">👨‍💻 博主是谁</h2>
-<h2 id="兴趣爱好">⛹ 兴趣爱好</h2>
-<h2 id="联系我呀">📬 联系我呀</h2>
+              <p>今天写了一个关于python的代码，虽然直接就是照着代码敲的，但是还是很有收获。<br>
+第一点：<br>
+我用的是vs code所以先要解决关于vs code的问题，也就是怎么样用vs code写python<br>
+首先打开vs code，然后在extensions中安装python的扩展，就是直接正在上面的输入栏中输入python,然后点击第一个安装（install）就可以了，安装后才能写python并且运行，当然，如果觉得麻烦，可以在建立的python后点击调试，在vs code的右下方就会显示下载python的扩展，直接点击install就行，安装后点击调试，选项栏中选择有python的哪一项即可，得到的结果都在调试控制台中。<br>
+第二点：本次写的是把1到4组成3个不相等的，并列出来。<br>
+首先是遍历，在除去相同的即可。<br>
+total=0<br>
+for i in range(1,5):<br>
+for j in range(1,5):<br>
+for k in range(1,5):<br>
+if((i!=j)and(j!=k)and(k!=i)):print(i,j,k) total+=1<br>
+print(total)<br>
+但是却有语法错误，等下次的时候我就会把这个错误找出来。<br>
+第二个就是python的特长，调用函数。<br>
+import itertools<br>
+sum2=0<br>
+a=[1,2,3,4]<br>
+for i in itertools.permutations(a,3):<br>
+print(i)<br>
+sum2+=1<br>
+print(sum2)<br>
+即可得到24个排列数。<br>
+——————————————————————————————————<br>
+对于上面的问题就是，python严格要求格式将上面换为：<br>
+total=0<br>
+for i in range(1,5):<br>
+for j in range(1,5):<br>
+for k in range(1,5):<br>
+if((i!=j)and(j!=k)and(k!=i)):<br>
+print(i,j,k)<br>
+total+=1<br>
+print(total)<br>
+即可得到正确的答案，所谓的语法错误就是格式错误，还有大部分python找不到错误时，检查一下格式问题。</p>
+<p>——————————————————————————————————<br>
+真正的开始写了，加油，小小白。</p>
 
             </div>
             
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://stklon.github.io/post/zhe-shi-wo-di-yi-ge-bolg">
+                  <h3 class="post-title">
+                    这是我第一个bolg
+                  </h3>
+                </a>
+              </div>
             
 
             
